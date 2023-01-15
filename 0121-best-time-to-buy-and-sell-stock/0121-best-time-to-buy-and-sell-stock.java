@@ -14,6 +14,7 @@ class Solution {
                 if (t > profit) 
                     profit = t;
             }
+            
         }
 
         return profit;
