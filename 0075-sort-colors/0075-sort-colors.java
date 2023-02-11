@@ -43,4 +43,31 @@ class Solution {
     }
 }
 
+
+Method: Array
+Time: 0ms
+
+class Solution {
+    public void sortColors(int[] nums) {
+        int[] colors = new int[3];
+        
+        for (int t : nums) {
+            colors[t]++;
+        }
+        
+        int colorIndex = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (colors[colorIndex] > 0) {
+                nums[i] = colorIndex;
+                colors[colorIndex]--;
+            }
+            else {
+                i--;
+                colorIndex++;
+            }
+                
+        }
+    }
+}
+
 */
