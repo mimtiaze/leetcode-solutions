@@ -12,7 +12,6 @@ class Solution {
 public:
     vector<int> arr;
 	Solution(ListNode *head) {
-        
 		ListNode *temp = head;
 		while (temp != NULL) {
 			arr.push_back(temp->val);
