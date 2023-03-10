@@ -11,18 +11,16 @@
 class Solution {
 public:
     vector<int> arr;
-	Solution(ListNode *head)
-	{
+	Solution(ListNode *head) {
+        
 		ListNode *temp = head;
-		while (temp != NULL)
-		{
+		while (temp != NULL) {
 			arr.push_back(temp->val);
 			temp = temp->next;
 		}
 	}
 
-	int getRandom()
-	{
+	int getRandom() {
 		int i = rand() % arr.size();
 		return arr[i];
 	}
